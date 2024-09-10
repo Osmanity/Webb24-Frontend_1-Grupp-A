@@ -3,8 +3,575 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Första grupp uppgiften</title>
-    <h1>Hej!</h1>
+    <title>Postgram</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- Mobile Navbar section -->
+      <div class="Mobile-Navbar-container">
+        <h1>Postgram</h1>
+        <div class="Navbar-icons">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <hr />
+    </header>
+    <div class="Desktop-Container">
+      <!-- Desktop Navbar "Sidebar" section -->
+      <div class="Dekstop-Navbar-container">
+        <h1 class="Logo-Heading">Postgram</h1>
+        <!-- Sidebar Icons -->
+
+        <div class="Desktop--container">
+          <div class="Navbar-items">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"
+              ></path>
+            </svg>
+            <p class="Navbar-text">Home</p>
+          </div>
+          <div class="Navbar-items">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+              ></path>
+            </svg>
+            <p class="Navbar-text">Explore</p>
+          </div>
+          <div class="Navbar-items">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+              ></path>
+            </svg>
+            <p class="Navbar-text">Favorites</p>
+          </div>
+          <div class="Navbar-items">
+            <img
+              src="./assets/CatProfil.jpg"
+              alt="cat image profile"
+              class="FooterProfileImg"
+            />
+            <p class="Navbar-text">Profile</p>
+          </div>
+        </div>
+      </div>
+      <div class="Sidebar-Space"></div>
+      <!-- Mobile Main Content -->
+      <div class="Mobile-layout-container">
+        <!-- Card -->
+        <div class="Card-container">
+          <div class="Top-Card-Section">
+            <!-- Top card section -->
+            <div>
+              <!-- Profil image -->
+              <img
+                src="./assets/CatProfil.jpg"
+                alt="cat image profile"
+                class="ProfileImg"
+              />
+            </div>
+            <div class="UserInfo">
+              <div class="UserInfo-detail">
+                <div class="User-text">
+                  <!-- UserName -->
+                  Name
+                </div>
+                <div>
+                  <!-- likes -->
+                  3532 Likes
+                </div>
+              </div>
+            </div>
+            <div class="HeartIcon-container">
+              <!-- Heart Icon -->
+              <div class="HeartIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="Bottom-Card-Section">
+            <!-- Card image -->
+            <p class="Bottom-card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              soluta non animi dolorem quam at cum ab! Deserunt
+            </p>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1714051660777-db4c9a50d51d?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=" bild på en man"
+              class="Card-Img"
+            />
+          </div>
+        </div>
+
+        <!-- Card2 -->
+        <div class="Card-container">
+          <div class="Top-Card-Section">
+            <!-- Top card section -->
+            <div>
+              <!-- Profil image -->
+              <img
+                src="./assets/CatProfil.jpg"
+                alt="cat image profile"
+                class="ProfileImg"
+              />
+            </div>
+            <div class="UserInfo">
+              <div class="UserInfo-detail">
+                <div class="User-text">
+                  <!-- UserName -->
+                  Name
+                </div>
+                <div>
+                  <!-- likes -->
+                  3532 Likes
+                </div>
+              </div>
+            </div>
+            <div class="HeartIcon-container">
+              <!-- Heart Icon -->
+              <div class="HeartIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="Bottom-Card-Section">
+            <!-- Card image -->
+            <p class="Bottom-card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              soluta non animi dolorem quam at cum ab! Deserunt
+            </p>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1714051660777-db4c9a50d51d?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=" bild på en man"
+              class="Card-Img"
+            />
+          </div>
+        </div>
+
+        <!-- Card3 -->
+        <div class="Card-container">
+          <div class="Top-Card-Section">
+            <!-- Top card section -->
+            <div>
+              <!-- Profil image -->
+              <img
+                src="./assets/CatProfil.jpg"
+                alt="cat image profile"
+                class="ProfileImg"
+              />
+            </div>
+            <div class="UserInfo">
+              <div class="UserInfo-detail">
+                <div class="User-text">
+                  <!-- UserName -->
+                  Name
+                </div>
+                <div>
+                  <!-- likes -->
+                  3532 Likes
+                </div>
+              </div>
+            </div>
+            <div class="HeartIcon-container">
+              <!-- Heart Icon -->
+              <div class="HeartIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="Bottom-Card-Section">
+            <!-- Card image -->
+            <p class="Bottom-card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              soluta non animi dolorem quam at cum ab! Deserunt
+            </p>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1714051660777-db4c9a50d51d?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=" bild på en man"
+              class="Card-Img"
+            />
+          </div>
+        </div>
+        <!-- Footer Navbar section -->
+        <div class="Foooter-Navbar-container">
+          <div class="Footer-Navbar-icons">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+              ></path>
+            </svg>
+            <img
+              src="./assets/CatProfil.jpg"
+              alt="cat image profile"
+              class="FooterProfileImg"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Desktop Main Content -->
+      <div class="Desktop-layout-container">
+        <div class="Desktop-layout-container-content">
+          <div class="Page-title-container">
+            <h2>For You</h2>
+          </div>
+
+          <div class="Cards-containerr--containerr-desktop">
+            <div class="Cards-containerr-desktop">
+              <!-- Card -->
+              <div class="Card-container">
+                <div class="Top-Card-Section">
+                  <!-- Top card section -->
+                  <div>
+                    <!-- Profil image -->
+                    <img
+                      src="./assets/CatProfil.jpg"
+                      alt="cat image profile"
+                      class="ProfileImg"
+                    />
+                  </div>
+                  <div class="UserInfo">
+                    <div class="UserInfo-detail">
+                      <div class="User-text">
+                        <!-- UserName -->
+                        Name
+                      </div>
+                      <div>
+                        <!-- likes -->
+                        3532 Likes
+                      </div>
+                    </div>
+                  </div>
+                  <div class="HeartIcon-container">
+                    <!-- Heart Icon -->
+                    <div class="HeartIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="Bottom-Card-Section">
+                  <!-- Card image -->
+                  <p class="Bottom-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus soluta non animi dolorem quam at cum ab! Deserunt
+                  </p>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1714051660777-db4c9a50d51d?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=" bild på en man"
+                    class="Card-Img"
+                  />
+                </div>
+              </div>
+
+              <!-- Card2 -->
+              <div class="Card-container">
+                <div class="Top-Card-Section">
+                  <!-- Top card section -->
+                  <div>
+                    <!-- Profil image -->
+                    <img
+                      src="./assets/CatProfil.jpg"
+                      alt="cat image profile"
+                      class="ProfileImg"
+                    />
+                  </div>
+                  <div class="UserInfo">
+                    <div class="UserInfo-detail">
+                      <div class="User-text">
+                        <!-- UserName -->
+                        Name
+                      </div>
+                      <div>
+                        <!-- likes -->
+                        3532 Likes
+                      </div>
+                    </div>
+                  </div>
+                  <div class="HeartIcon-container">
+                    <!-- Heart Icon -->
+                    <div class="HeartIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="Bottom-Card-Section">
+                  <!-- Card image -->
+                  <p class="Bottom-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus soluta non animi dolorem quam at cum ab! Deserunt
+                  </p>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1714051660777-db4c9a50d51d?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=" bild på en man"
+                    class="Card-Img"
+                  />
+                </div>
+              </div>
+
+              <!-- Card3 -->
+              <div class="Card-container">
+                <div class="Top-Card-Section">
+                  <!-- Top card section -->
+                  <div>
+                    <!-- Profil image -->
+                    <img
+                      src="./assets/CatProfil.jpg"
+                      alt="cat image profile"
+                      class="ProfileImg"
+                    />
+                  </div>
+                  <div class="UserInfo">
+                    <div class="UserInfo-detail">
+                      <div class="User-text">
+                        <!-- UserName -->
+                        Name
+                      </div>
+                      <div>
+                        <!-- likes -->
+                        3532 Likes
+                      </div>
+                    </div>
+                  </div>
+                  <div class="HeartIcon-container">
+                    <!-- Heart Icon -->
+                    <div class="HeartIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="Bottom-Card-Section">
+                  <!-- Card image -->
+                  <p class="Bottom-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus soluta non animi dolorem quam at cum ab! Deserunt
+                  </p>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1714051660777-db4c9a50d51d?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=" bild på en man"
+                    class="Card-Img"
+                  />
+                </div>
+              </div>
+
+              <!-- Card4 -->
+              <div class="Card-container">
+                <div class="Top-Card-Section">
+                  <!-- Top card section -->
+                  <div>
+                    <!-- Profil image -->
+                    <img
+                      src="./assets/CatProfil.jpg"
+                      alt="cat image profile"
+                      class="ProfileImg"
+                    />
+                  </div>
+                  <div class="UserInfo">
+                    <div class="UserInfo-detail">
+                      <div class="User-text">
+                        <!-- UserName -->
+                        Name
+                      </div>
+                      <div>
+                        <!-- likes -->
+                        3532 Likes
+                      </div>
+                    </div>
+                  </div>
+                  <div class="HeartIcon-container">
+                    <!-- Heart Icon -->
+                    <div class="HeartIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="Bottom-Card-Section">
+                  <!-- Card image -->
+                  <p class="Bottom-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus soluta non animi dolorem quam at cum ab! Deserunt
+                  </p>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1714051660777-db4c9a50d51d?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=" bild på en man"
+                    class="Card-Img"
+                  />
+                </div>
+              </div>
+              <!-- Footer Navbar section -->
+              <div class="Foooter-Navbar-container">
+                <div class="Footer-Navbar-icons">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"
+                    ></path>
+                  </svg>
+                  <img
+                    src="./assets/CatProfil.jpg"
+                    alt="cat image profile"
+                    class="FooterProfileImg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
