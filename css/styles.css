@@ -99,6 +99,8 @@ body {
 .Card-Img {
   max-width: 100%;
   max-height: 30%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .Bottom-Card-Section {
@@ -235,10 +237,40 @@ body {
   .Card-container {
     margin: 2rem;
     width: 40%;
+    height: 30rem;
+    /* border: 1px solid #252525; */
+    border-radius: 1rem;
   }
 
   /* Footer  */
   .Foooter-Navbar-container {
     display: none;
+  }
+
+  .Footer-Desktop-Container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .Footer-Desktop {
+    /* display: flex; */
+    margin-top: 12rem;
+    width: 100%;
+    border-top: 1px solid #25252563;
+  }
+
+  .Footer-copyright {
+    display: flex;
+  }
+
+  .Footer-Desktop-Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Footer-text {
+    margin-right: 24px;
   }
 }
