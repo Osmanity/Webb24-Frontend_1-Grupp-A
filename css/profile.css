@@ -96,6 +96,36 @@ textarea#about {
 .submit {
     margin-top: 0.5px;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.container-2 {
+    display: flex;
+}
 
 
-
+@media only screen and (min-width: 1024px) { 
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    
+    .container-2 {
+        display: flex;
+    }
+    
+}
