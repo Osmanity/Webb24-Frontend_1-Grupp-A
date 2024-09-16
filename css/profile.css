@@ -313,9 +313,7 @@ body {
 form {
   display: flex;
   justify-content: center;
-  border: 0.5px solid black;
   padding: 20px;
-  width: 600px;
   margin: 0 auto;
   border-radius: 1%;
 }
@@ -438,6 +436,8 @@ textarea#about {
   display: flex;
 }
 
+
+
 @media only screen and (min-width: 1024px) {
   .container {
     display: flex;
@@ -452,5 +452,15 @@ textarea#about {
 
   .container-2 {
     display: flex;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid black;
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 1%;
   }
 }
