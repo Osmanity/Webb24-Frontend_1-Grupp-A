@@ -469,5 +469,9 @@ textarea#about {
     text-decoration: none;
     color: black;
   }
+  .Content-container {
+    height: 120vh;
+
+  }
   
 }
