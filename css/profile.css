@@ -463,4 +463,9 @@ textarea#about {
     margin: 0 auto;
     border-radius: 1%;
   }
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
 }
