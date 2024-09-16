@@ -10,6 +10,7 @@ color
 
 body {
   position: relative;
+  width: 100%;
 }
 
 /* Navbar Icon  */
@@ -144,6 +145,18 @@ body {
   border-radius: 50%;
 }
 
+.Page-title {
+  display: none;
+}
+
+.Footer-text {
+  display: none;
+}
+
+.Footer-Desktop {
+  display: none;
+}
+
 /* Desktop layout styling */
 
 @media only screen and (min-width: 1024px) {
@@ -206,19 +219,21 @@ body {
     display: flex;
     height: 120vh;
     padding-left: 25%;
+    width: 100%;
   }
 
   .Desktop-layout-container-content {
     display: flex;
     flex-direction: column;
-
     align-items: center;
+    width: 100%;
   }
 
   .Cards-container-container-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1 1 0%;
   }
 
   .Cards-containerr-desktop {
@@ -280,5 +295,17 @@ body {
 
   .Footer-text {
     margin-right: 24px;
+  }
+
+  .Page-title {
+    display: block;
+  }
+
+  .Footer-text {
+    display: block;
+  }
+
+  .Footer-Desktop {
+    display: block;
   }
 }
