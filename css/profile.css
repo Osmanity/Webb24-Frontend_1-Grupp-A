@@ -328,6 +328,12 @@ button {
   border-radius: 1vh;
   margin-top: 22px;
 }
+button:hover {
+    background-color: black;
+    transform: scale(1.05); 
+    transition: 0.3s; 
+    cursor: pointer;
+}
 
 .submit button:focus {
   outline: none;
