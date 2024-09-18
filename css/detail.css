@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Inter', sans-serif;
+ 
 
 
 }
@@ -93,8 +94,8 @@ body{
   margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0;
   padding-left: 1rem ;
+
 }
 /* Footer  */
 .Foooter-Navbar-container {
@@ -129,7 +130,7 @@ body{
     display: flex;
     flex-direction:row;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
   } 
   .user_information{
@@ -146,10 +147,12 @@ body{
     display: flex;
     font-size: 1.2rem;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     text-decoration: none;
     list-style: none;
     margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 500;
 
 }
 
@@ -256,6 +259,7 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
 }
 
 
@@ -267,6 +271,7 @@ body{
 .Footer-Desktop-Navbar {
   display: flex;
   gap: 1.5rem;
+
  
 
 }
@@ -275,7 +280,17 @@ body{
 
 .Footer-text {
   margin-right: 24px;
+  
 
+}
+
+.Footer-text a{
+  margin: 24px;
+  text-decoration: none;
+  color: black;
+  font-size:bold;
+  font-size: 500;
+  
 }
 
  
